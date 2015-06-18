@@ -1,8 +1,7 @@
 <?php
 namespace milano\assets;
 
-// TODO: Add initialization script
-class PrettyLoaderAsset extends \milano\assets\BaseAsset
+class PrettyLoaderAsset extends BaseAsset
 {
 
     public $sourcePath = '@vendor/as-milano/yii2-assets/assets/src/prettyLoader';
@@ -15,5 +14,4 @@ class PrettyLoaderAsset extends \milano\assets\BaseAsset
     public $depends = [
         'yii\web\JqueryAsset'
     ];
-
 }

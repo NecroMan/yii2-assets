@@ -1,7 +1,9 @@
 <?php
 namespace milano\assets;
 
-class BaseAsset extends \yii\web\AssetBundle
+use yii\web\AssetBundle;
+
+class BaseAsset extends AssetBundle
 {
 
     /**

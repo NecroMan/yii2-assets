@@ -41,21 +41,87 @@ or add it to `$depends` section of one of your base asset classes:
  */
 class AppAsset extends AssetBundle
 {
-    public $basePath = '@webroot';
-    public $baseUrl = '@web';
-    public $css = [
-        'css/site.css'
-    ];
-    public $js = [
-    ];
+    ...
+    
     public $depends = [
-        'yii\web\YiiAsset',
-        'yii\bootstrap\BootstrapPluginAsset',
+        ...
         'milano\assets\FontAwesomeAsset',
         'milano\assets\PrettyLoaderAsset',
         'milano\assets\PrettyPhotoAsset'
     ];
 }
+```
+
+In this case you can handle published files in your own way. Or you can use included widgets.
+
+#### Widgets
+
+Run any widget in a view
+
+```php
+\milano\assets\PrettyLoaderWidget::widget([
+    'blockContent' => false
+]);
+```
+
+or attach it to another asset in `AssetBundle::register($view)` method
+
+```php
+/**
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @since 2.0
+ */
+class AppAsset extends AssetBundle
+{
+    ...
+    
+    public static function register($view)
+    {
+        $asset = parent::register($view);
+
+        \milano\assets\PrettyLoaderWidget::widget();
+        \milano\assets\PrettyPhotoWidget::widget();
+
+        return $asset;
+    }
+}
+```
+
+Remember: you can pass additional settings in `widget($config = [])` function.
+
+#### prettyLoader
+
+Add CSS to your project
+
+```css
+#loaderBackground {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1999;
+}
+
+#loaderIcon {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: bold;
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 2000;
+    color: #EEE;
+}
+```
+
+Add HTML to your layout
+
+```html
+<div id="loaderIcon"><i class="fa fa-spinner fa-spin"></i></div>
+<div id="loaderBackground"></div>
 ```
 
 ### Helpers

@@ -1,8 +1,7 @@
 <?php
 namespace milano\assets;
 
-// TODO: Add initialization script
-class PrettyPhotoAsset extends \milano\assets\BaseAsset
+class PrettyPhotoAsset extends BaseAsset
 {
 
     public $sourcePath = '@vendor/as-milano/yii2-assets/assets/src/prettyPhoto';

@@ -1,7 +1,7 @@
 <?php
 namespace milano\assets;
 
-class FontAwesomeAsset extends \milano\assets\BaseAsset
+class FontAwesomeAsset extends BaseAsset
 {
 
     public $sourcePath = '@bower/font-awesome';

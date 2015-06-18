@@ -1,0 +1,32 @@
+{
+  "name": "as-milano/yii2-assets",
+  "description": "Useful assets (icons, js and css components) for Yii2 Framework.",
+  "type": "yii2-extension",
+  "keywords": [
+    "yii2",
+    "extension",
+    "assets",
+    "icons",
+    "font-awesome",
+    "whhg",
+    "prettyLoader",
+    "prettyPhoto"
+  ],
+  "license": "BSD-3-Clause",
+  "authors": [
+    {
+      "name": "NecroMan",
+      "email": "nm666@bk.ru"
+    }
+  ],
+  "require": {
+    "yiisoft/yii2": "*",
+    "bower-asset/font-awesome": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "milano\\assets\\": "assets",
+      "milano\\helpers\\": "helpers"
+    }
+  }
+}

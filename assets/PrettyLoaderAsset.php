@@ -14,4 +14,5 @@ class PrettyLoaderAsset extends BaseAsset
     public $depends = [
         'yii\web\JqueryAsset'
     ];
+
 }

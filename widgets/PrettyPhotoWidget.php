@@ -1,12 +1,14 @@
 <?php
-namespace milano\assets;
+namespace milano\widgets;
 
+use milano\assets\PrettyPhotoAsset;
 use yii\base\Widget;
 use yii\helpers\Json;
 
 class PrettyPhotoWidget extends Widget
 {
 
+    /** Available themes */
     const THEME_DARK_ROUNDED = 'dark_rounded';
     const THEME_DARK_SQUARE = 'dark_square';
     const THEME_DEFAULT = 'default';

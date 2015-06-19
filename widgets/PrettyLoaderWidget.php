@@ -1,6 +1,7 @@
 <?php
-namespace milano\assets;
+namespace milano\widgets;
 
+use milano\assets\PrettyLoaderAsset;
 use yii\base\Widget;
 use yii\helpers\Json;
 use yii\helpers\Url;

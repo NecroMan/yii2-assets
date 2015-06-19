@@ -21,11 +21,17 @@
   ],
   "require": {
     "yiisoft/yii2": "*",
-    "bower-asset/font-awesome": "dev-master"
+    "bower-asset/jquery-migrate": "dev-master",
+    "bower-asset/font-awesome": "dev-master",
+    "bower-asset/jquery.lazyload": "dev-master",
+    "bower-asset/jrumble": "dev-master",
+    "bower-asset/jcarousel": "dev-master",
+    "bower-asset/superfish": "dev-master"
   },
   "autoload": {
     "psr-4": {
       "milano\\assets\\": "assets",
+      "milano\\widgets\\": "widgets",
       "milano\\helpers\\": "helpers"
     }
   }

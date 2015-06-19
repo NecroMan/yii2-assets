@@ -18,7 +18,7 @@ class BaseAsset extends AssetBundle
         return str_replace('.min.', '.', $path);
     }
 
-    public function init()
+    public function registerAssetFiles($view)
     {
         // If we are in debug mode, replace minified versions of js and css files with full ones.
         if (YII_DEBUG) {
@@ -26,7 +26,7 @@ class BaseAsset extends AssetBundle
             array_map([$this, 'removeMin'], $this->js);
         }
 
-        parent::init();
+        parent::registerAssetFiles($view);
     }
 
 }

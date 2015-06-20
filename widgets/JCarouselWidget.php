@@ -57,7 +57,7 @@ class JCarouselWidget extends Widget
 
         foreach ($this->plugins as $plugin => $options) {
             if (!empty($options['enable'])) {
-                $bundle->js[] = 'js/jquery.jcarousel-' . $plugin . '.min.js';
+                $bundle->js[] = 'jquery.jcarousel-' . $plugin . '.min.js';
             }
         }
 

@@ -10,7 +10,8 @@
     "font-awesome",
     "whhg",
     "prettyLoader",
-    "prettyPhoto"
+    "prettyPhoto",
+    "photobox"
   ],
   "license": "BSD-3-Clause",
   "authors": [
@@ -19,14 +20,18 @@
       "email": "nm666@bk.ru"
     }
   ],
+  "minimum-stability": "dev",
   "require": {
-    "yiisoft/yii2": "~2.0.4",
+    "yiisoft/yii2": "~2.0",
     "bower-asset/jquery-migrate": "~1.2",
     "bower-asset/font-awesome": "dev-master",
     "bower-asset/jquery.lazyload": "~1.9",
     "bower-asset/jrumble": "~1.3",
     "bower-asset/jcarousel": "dev-master",
-    "bower-asset/superfish": "~1.7"
+    "bower-asset/superfish": "~1.7",
+    "bower-asset/photobox": "~1.9",
+    "bower-asset/remarkable-bootstrap-notify": "dev-master",
+    "bower-asset/animate.css": "dev-master"
   },
   "autoload": {
     "psr-4": {

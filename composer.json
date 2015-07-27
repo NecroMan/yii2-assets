@@ -2,17 +2,7 @@
   "name": "as-milano/yii2-assets",
   "description": "Useful assets (icons, js and css components) for Yii2 Framework.",
   "type": "yii2-extension",
-  "keywords": [
-    "yii2",
-    "extension",
-    "assets",
-    "icons",
-    "font-awesome",
-    "whhg",
-    "prettyLoader",
-    "prettyPhoto",
-    "photobox"
-  ],
+  "keywords": [],
   "license": "BSD-3-Clause",
   "authors": [
     {
@@ -26,11 +16,11 @@
     "bower-asset/jquery-migrate": "~1.2",
     "bower-asset/font-awesome": "dev-master",
     "bower-asset/jquery.lazyload": "~1.9",
-    "bower-asset/jcarousel": "dev-master",
     "bower-asset/superfish": "~1.7",
     "bower-asset/photobox": "~1.9",
     "bower-asset/remarkable-bootstrap-notify": "dev-master",
-    "bower-asset/animate.css": "dev-master"
+    "bower-asset/animate.css": "dev-master",
+    "bower-asset/owl.carousel": "~2.0"
   },
   "autoload": {
     "psr-4": {

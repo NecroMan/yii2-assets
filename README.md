@@ -12,8 +12,9 @@ Includes:
     * [prettyLoader](http://www.no-margin-for-errors.com/projects/prettyloader/): `assets\PrettyLoaderAsset`, `widgets\PrettyLoaderWidget`
     * [prettyPhoto](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/): `assets\PrettyPhotoAsset`, `widgets\PrettyPhotoWidget`
     * [Superfish](http://users.tpg.com.au/j_birch/plugins/superfish/): `assets\SuperfishAsset`, `widgets\SuperfishWidget`
-    * [jCarousel](http://sorgalla.com/jcarousel/): `assets\JCarouselAsset`, `widgets\JCarouselWidget`
-    * [jRumble](http://jackrugile.com/jrumble/): `assets\JRumbleAsset`
+    * [Owl Carousel](http://www.owlcarousel.owlgraphic.com/): `assets\OwlCarouselAsset`, `widgets\OwlCarouselWidget`
+    * [Bootstrap Notify](http://bootstrap-growl.remabledesigns.com/): `assets\BootstrapNotifyAsset`, depends on `assets\AnimateCssAsset`
+    * [Animate.css](http://daneden.github.io/animate.css/): `assets\AnimateCssAsset`
 
 Installation
 ------------
@@ -137,77 +138,9 @@ Add HTML to your layout
 <div id="loaderBackground"></div>
 ```
 
-#### jCarousel
+#### Owl Carousel
 
-Add CSS to your project
-
-```css
-/*
-This is the visible area of you carousel.
-Set a width here to define how much items are visible.
-The width can be either fixed in px or flexible in %.
-Position must be relative!
-*/
-.jcarousel {
-    position: relative;
-    overflow: hidden;
-}
-
-/*
-This is the container of the carousel items.
-You must ensure that the position is relative or absolute and
-that the width is big enough to contain all items.
-*/
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
-
-    /* Optional, required in this case since it's a <ul> element */
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-/*
-These are the item elements. jCarousel works best, if the items
-have a fixed width and height (but it's not required).
-*/
-.jcarousel li {
-    /* Required only for block elements like <li>'s */
-    float: left;
-}
-```
-
-By default widget initialize only core component. To add and configure plugins use property
-
-```php
-/** @var array Plugins with options */
-public $plugins = [
-    self::PLUGIN_AUTOSCROLL => [
-        'enable' => false,
-        'init' => false
-    ],
-    self::PLUGIN_CONTROL => [
-        'enable' => false,
-        'init' => false,
-        'prevSelector' => '',
-        'nextSelector' => '',
-        'settings' => []
-    ],
-    self::PLUGIN_PAGINATION => [
-        'enable' => false,
-        'init' => false,
-        'selector' => '',
-        'settings' => []
-    ],
-    self::PLUGIN_SCROLLINTOVIEW => [
-        'enabled' => false
-    ]
-];
-```
-
-`enable` just register corresponding file while `init` automatically initialize it with current jCarousel object.
-Control plugin initialize Prev and Next buttons, so use in `['settings']['target']` only integer value. It automatically will be converted to `-=` and `+=` values respectively. Default target value is 1. 
+Wrap carousel items in container with class `owl-carousel`.
 
 ### Helpers
 

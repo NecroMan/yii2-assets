@@ -7,7 +7,8 @@
   "authors": [
     {
       "name": "NecroMan",
-      "email": "nm666@bk.ru"
+      "email": "nm666@bk.ru",
+      "homepage": "http://as-milano.ru/"
     }
   ],
   "minimum-stability": "dev",
@@ -17,7 +18,6 @@
     "bower-asset/font-awesome": "dev-master",
     "bower-asset/jquery.lazyload": "~1.9",
     "bower-asset/superfish": "~1.7",
-    "bower-asset/photobox": "~1.9",
     "bower-asset/remarkable-bootstrap-notify": "dev-master",
     "bower-asset/animate.css": "dev-master",
     "bower-asset/owl.carousel": "~2.0"

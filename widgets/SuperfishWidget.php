@@ -18,7 +18,7 @@ class SuperfishWidget extends Widget
     public $autoInit = true;
 
     /** @var array Additional plugin options */
-    public $pluginSetting = [];
+    public $pluginSettings = [];
 
     /** @var string Target selector to apply Superfish plugin */
     public $selector = 'ul.sf-menu';
@@ -55,7 +55,7 @@ class SuperfishWidget extends Widget
         }
 
         if ($this->autoInit) {
-            $js[] = '$(' . Json::encode($this->selector) . ').superfish(' . Json::encode($this->pluginSetting) . ');';
+            $js[] = '$(' . Json::encode($this->selector) . ').superfish(' . Json::encode($this->pluginSettings) . ');';
         }
 
         SuperfishAsset::register($this->getView());

@@ -12,7 +12,7 @@ class LazyLoadWidget extends Widget
     public $autoInit = true;
 
     /** @var array Additional plugin options */
-    public $pluginSetting = [
+    public $pluginSettings = [
         'effect' => 'fadeIn'
     ];
 
@@ -26,7 +26,7 @@ class LazyLoadWidget extends Widget
         $js = [];
 
         if ($this->autoInit) {
-            $js[] = '$(' . Json::encode($this->selector) . ').lazyload(' . Json::encode($this->pluginSetting) . ');';
+            $js[] = '$(' . Json::encode($this->selector) . ').lazyload(' . Json::encode($this->pluginSettings) . ');';
         }
 
         $this->getView()->registerJs(implode(' ', $js));

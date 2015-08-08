@@ -20,7 +20,7 @@ class PrettyPhotoWidget extends Widget
     public $autoInit = true;
 
     /** @var array Additional plugin options */
-    public $pluginSetting = [
+    public $pluginSettings = [
         'social_tools' => ''
     ];
 
@@ -34,7 +34,7 @@ class PrettyPhotoWidget extends Widget
         $js = [];
 
         if ($this->autoInit) {
-            $js[] = '$(' . Json::encode($this->selector) . ').prettyPhoto(' . Json::encode($this->pluginSetting) . ');';
+            $js[] = '$(' . Json::encode($this->selector) . ').prettyPhoto(' . Json::encode($this->pluginSettings) . ');';
         }
 
         $this->getView()->registerJs(implode(' ', $js));

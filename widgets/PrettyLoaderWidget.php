@@ -14,7 +14,7 @@ class PrettyLoaderWidget extends Widget
     public $autoInit = true;
 
     /** @var array Additional plugin options */
-    public $pluginSetting = [];
+    public $pluginSettings = [];
 
     /** @var bool Block page content when Ajax calls. Shows transparent <div> and progress indicator. */
     public $blockContent = true;
@@ -33,12 +33,12 @@ class PrettyLoaderWidget extends Widget
 
         $js = $ajaxStart = $ajaxStop = $ajaxError = $css = [];
 
-        if (empty($this->pluginSetting['loader'])) {
-            $this->pluginSetting['loader'] = $asset->baseUrl . '/images/prettyLoader/ajax-loader.gif';
+        if (empty($this->pluginSettings['loader'])) {
+            $this->pluginSettings['loader'] = $asset->baseUrl . '/images/prettyLoader/ajax-loader.gif';
         }
 
         if ($this->autoInit) {
-            $js[] = '$.prettyLoader(' . Json::encode($this->pluginSetting) . ');';
+            $js[] = '$.prettyLoader(' . Json::encode($this->pluginSettings) . ');';
         }
 
         if ($this->blockContent) {

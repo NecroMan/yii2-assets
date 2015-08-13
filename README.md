@@ -144,6 +144,20 @@ Add HTML to your layout
 
 Wrap carousel items in container with class `owl-carousel`.
 
+#### LazyLoad
+
+If you register AnimateCss Asset you can use it's animation effects to show loaded images:
+
+```php
+LazyLoadWidget::widget([
+    'selector' => 'img[data-original]',
+    'pluginSettings' => [
+        'effect' => 'lazyAnimate',
+        'effect_speed' => 'zoomIn' // Choose effect you want
+    ]
+]);
+```
+
 ### Helpers
 
 #### Icon helpers

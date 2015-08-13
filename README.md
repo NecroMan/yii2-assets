@@ -14,7 +14,7 @@ Includes:
     * [Superfish](http://users.tpg.com.au/j_birch/plugins/superfish/): `assets\SuperfishAsset`, `widgets\SuperfishWidget`
     * [Owl Carousel](http://www.owlcarousel.owlgraphic.com/): `assets\OwlCarouselAsset`, `widgets\OwlCarouselWidget`
     * [Bootstrap Notify](http://bootstrap-growl.remabledesigns.com/): `assets\BootstrapNotifyAsset`, depends on `assets\AnimateCssAsset`
-    * [Animate.css](http://daneden.github.io/animate.css/): `assets\AnimateCssAsset`
+    * [Animate.css](http://daneden.github.io/animate.css/)  + jQuery addon [AnimateCSS](https://github.com/craigmdennis/animateCSS): `assets\AnimateCssAsset`
     * [Owl Carousel](http://www.owlcarousel.owlgraphic.com/): `assets\OwlCarouselAsset`
     * [Slick](http://kenwheeler.github.io/slick/): `assets\SlickAsset`
 

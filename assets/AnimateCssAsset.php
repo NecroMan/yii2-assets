@@ -17,4 +17,12 @@ class AnimateCssAsset extends BaseAsset
         ]
     ];
 
+    public function publish($am)
+    {
+        parent::publish($am);
+
+        $path = $am->publish('@vendor/as-milano/yii2-assets/assets/src/animateCss');
+        $this->js[] = $path . '/js/jquery.animatecss.min.js';
+    }
+
 }

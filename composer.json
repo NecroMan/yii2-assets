@@ -18,9 +18,10 @@
     "bower-asset/font-awesome": "dev-master",
     "bower-asset/jquery.lazyload": "~1.9",
     "bower-asset/superfish": "~1.7",
-    "bower-asset/remarkable-bootstrap-notify": "dev-master",
+    "bower-asset/remarkable-bootstrap-notify": "~3.1",
     "bower-asset/animate.css": "dev-master",
-    "bower-asset/owl.carousel": "~2.0"
+    "bower-asset/owl.carousel": "~2.0",
+    "bower-asset/slick-carousel": "~1.5"
   },
   "autoload": {
     "psr-4": {

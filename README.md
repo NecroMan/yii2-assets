@@ -15,6 +15,8 @@ Includes:
     * [Owl Carousel](http://www.owlcarousel.owlgraphic.com/): `assets\OwlCarouselAsset`, `widgets\OwlCarouselWidget`
     * [Bootstrap Notify](http://bootstrap-growl.remabledesigns.com/): `assets\BootstrapNotifyAsset`, depends on `assets\AnimateCssAsset`
     * [Animate.css](http://daneden.github.io/animate.css/): `assets\AnimateCssAsset`
+    * [Owl Carousel](http://www.owlcarousel.owlgraphic.com/): `assets\OwlCarouselAsset`
+    * [Slick](http://kenwheeler.github.io/slick/): `assets\SlickAsset`
 
 Installation
 ------------

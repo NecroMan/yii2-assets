@@ -22,8 +22,8 @@ class BaseAsset extends AssetBundle
     {
         // If we are in debug mode, replace minified versions of js and css files with full ones.
         if (YII_DEBUG) {
-            array_map([$this, 'removeMin'], $this->css);
-            array_map([$this, 'removeMin'], $this->js);
+            $this->css = array_map([$this, 'removeMin'], $this->css);
+            $this->js = array_map([$this, 'removeMin'], $this->js);
         }
 
         parent::registerAssetFiles($view);

@@ -13,6 +13,7 @@ Includes:
     * [prettyPhoto](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/): `assets\PrettyPhotoAsset`, `widgets\PrettyPhotoWidget`
     * [Superfish](http://users.tpg.com.au/j_birch/plugins/superfish/): `assets\SuperfishAsset`, `widgets\SuperfishWidget`
     * [Owl Carousel](http://www.owlcarousel.owlgraphic.com/): `assets\OwlCarouselAsset`, `widgets\OwlCarouselWidget`
+    * [Photobox](http://dropthebit.com/demos/photobox/): `assets\PhotoboxAsset`, `widgets\PhotoboxWidget`
     * [Bootstrap Notify](http://bootstrap-growl.remabledesigns.com/): `assets\BootstrapNotifyAsset`, depends on `assets\AnimateCssAsset`
     * [Animate.css](http://daneden.github.io/animate.css/)  + jQuery addon [AnimateCSS](https://github.com/craigmdennis/animateCSS): `assets\AnimateCssAsset`
     * [Owl Carousel](http://www.owlcarousel.owlgraphic.com/): `assets\OwlCarouselAsset`
@@ -80,7 +81,7 @@ Run any widget in a view
 ]);
 ```
 
-or attach it to another asset in `AssetBundle::register($view)` method
+or attach it to another asset in `AssetBundle::register` method
 
 ```php
 /**
@@ -103,7 +104,7 @@ class AppAsset extends AssetBundle
 }
 ```
 
-Remember: you can pass additional settings in `::widget` function.
+Remember: you can pass additional settings in `*::widget` function.
 
 #### prettyLoader
 

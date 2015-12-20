@@ -307,7 +307,7 @@
                         caption.linkText = captionlink;
                         caption.linkHref = captionlink;
                     }
-                    caption.content += ' <a href="'+ caption.linkHref +'">' + caption.linkText + '</a>';
+                    caption.content += caption.linkHref ? ' <a href="'+ caption.linkHref +'">' + caption.linkText + '</a>' : caption.linkText;
                 }
 
                 images.push( [link[0].href, caption.content, thumbSrc] );

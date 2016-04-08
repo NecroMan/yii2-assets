@@ -11,6 +11,11 @@ class PhotoboxWidget extends Widget
     /** @var bool Enable initialization of prettyPhoto on page ready */
     public $autoInit = true;
 
+    /** @var array Additional plugin options */
+    public $pluginSettings = [
+        'time' => 0
+    ];
+
     /** @var string Target container of images */
     public $container = '#content';
 
@@ -24,7 +29,8 @@ class PhotoboxWidget extends Widget
         $js = [];
 
         if ($this->autoInit) {
-            $js[] = '$(' . Json::encode($this->container) . ').photobox(' . Json::encode($this->selector) . ', { time: 0 });';
+            $js[] = '$(' . Json::encode($this->container) . ').photobox(' . Json::encode($this->selector) . ', ' .
+                Json::encode($this->pluginSettings) . ');';
         }
 
         $this->getView()->registerJs(implode(' ', $js));

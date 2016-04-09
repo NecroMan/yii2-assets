@@ -21,7 +21,9 @@
     "bower-asset/remarkable-bootstrap-notify": "~3.1",
     "bower-asset/animate.css": "dev-master",
     "bower-asset/owl.carousel": "~2.0",
-    "bower-asset/slick-carousel": "~1.5"
+    "bower-asset/slick-carousel": "~1.5",
+    "bower-asset/jquery.nicescroll": "~3.6",
+    "bower-asset/jQuery.mmenu": "~5.6"
   },
   "autoload": {
     "psr-4": {

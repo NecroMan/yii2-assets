@@ -1,6 +1,7 @@
 Yii2 useful assets
 ==================
 Useful assets (icons, js and css components) for Yii2 Framework.
+**OPTIMIZED FOR OWN PROJECTS.**
 
 Includes:
 * Icons
@@ -18,6 +19,8 @@ Includes:
     * [Animate.css](http://daneden.github.io/animate.css/)  + jQuery addon [AnimateCSS](https://github.com/craigmdennis/animateCSS): `assets\AnimateCssAsset`
     * [Owl Carousel](http://www.owlcarousel.owlgraphic.com/): `assets\OwlCarouselAsset`
     * [Slick](http://kenwheeler.github.io/slick/): `assets\SlickAsset`
+    * [jQuery.NiceScroll](http://nicescroll.areaaperta.com): `widgets\NiceScrollWidget`
+    * [jQuery.mmenu](http://mmenu.frebsite.nl): `widgets\MmenuWidget`
 
 Installation
 ------------

@@ -11,8 +11,6 @@ Includes:
     * [jQuery Migrate](http://blog.jquery.com/2013/05/08/jquery-migrate-1-2-1-released/): `assets\JQueryMigrateAsset`
     * [LazyLoad](http://www.appelsiini.net/projects/lazyload): `assets\LazyLoadAsset`, `widgets\LazyLoadWidget`
     * [prettyLoader](http://www.no-margin-for-errors.com/projects/prettyloader/): `assets\PrettyLoaderAsset`, `widgets\PrettyLoaderWidget`
-    * [prettyPhoto](http://www.no-margin-for-errors.com/projects/prettyphoto-jquery-lightbox-clone/): `assets\PrettyPhotoAsset`, `widgets\PrettyPhotoWidget`
-    * [Superfish](http://users.tpg.com.au/j_birch/plugins/superfish/): `assets\SuperfishAsset`, `widgets\SuperfishWidget`
     * [Owl Carousel](http://www.owlcarousel.owlgraphic.com/): `assets\OwlCarouselAsset`, `widgets\OwlCarouselWidget`
     * [Photobox](http://dropthebit.com/demos/photobox/): `assets\PhotoboxAsset`, `widgets\PhotoboxWidget`
     * [Bootstrap Notify](http://bootstrap-growl.remabledesigns.com/): `assets\BootstrapNotifyAsset`, depends on `assets\AnimateCssAsset`

@@ -22,7 +22,8 @@
     "bower-asset/owl.carousel": "~2.0",
     "bower-asset/slick-carousel": "~1.5",
     "bower-asset/jquery.nicescroll": "~3.6",
-    "bower-asset/jQuery.mmenu": "~5.6"
+    "bower-asset/jQuery.mmenu": "~5.6",
+    "bower-asset/html.sortable": "*"
   },
   "autoload": {
     "psr-4": {

@@ -1,7 +1,8 @@
 Yii2 useful assets
 ==================
 Useful assets (icons, js and css components) for Yii2 Framework.
-**OPTIMIZED FOR OWN PROJECTS.**
+
+**OPTIMIZED FOR OWN PROJECTS!**
 
 Includes:
 * Icons
@@ -19,6 +20,7 @@ Includes:
     * [Slick](http://kenwheeler.github.io/slick/): `assets\SlickAsset`
     * [jQuery.NiceScroll](http://nicescroll.areaaperta.com): `widgets\NiceScrollWidget`
     * [jQuery.mmenu](http://mmenu.frebsite.nl): `widgets\MmenuWidget`
+    * [HTML5 Sortable](http://lukasoppermann.github.io/html5sortable/examples/index.html): `assets\SortableAsset`
 
 Installation
 ------------
